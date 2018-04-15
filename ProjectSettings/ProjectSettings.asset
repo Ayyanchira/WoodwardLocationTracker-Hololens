@@ -552,11 +552,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: WoodwardLocationTracker-Hololens
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 80c778e9f9f3d401
   metroApplicationDescription: WoodwardLocationTracker-Hololens
   wsaImages: {}
   metroTileShortName: 
@@ -575,8 +575,11 @@ PlayerSettings:
     WindowsStoreApps:
       HumanInterfaceDevice: False
       InternetClient: False
-      InternetClientServer: False
-      PrivateNetworkClientServer: False
+      InternetClientServer: True
+      Microphone: True
+      PrivateNetworkClientServer: True
+      SpatialPerception: False
+      WebCam: True
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 

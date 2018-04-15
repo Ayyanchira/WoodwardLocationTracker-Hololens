@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 
 public class CustomNetworkManager : NetworkManager {
 
+
     //public GameObject playerPrefab;
     //public void connectAsClient()
     //{
@@ -17,4 +18,9 @@ public class CustomNetworkManager : NetworkManager {
     //    ClientScene.AddPlayer(conn, playerCount);
     //    base.OnClientConnect(conn);
     //}
+
+    public void connectAsClient()
+    {
+        NetworkManager.singleton.StartClient();
+    }
 }

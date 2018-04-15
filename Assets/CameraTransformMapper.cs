@@ -15,14 +15,16 @@ public class CameraTransformMapper : NetworkBehaviour {
 	void Update () {
 
 
-        if (isClient)
+        if (isClient && isLocalPlayer)
         {
-            
+            //Debug.Log("CameraTransformMapper Class: Is Client and Local");
             if (isServerCameraActive == true){
                 GameObject serverCamera = GameObject.FindGameObjectWithTag("ServerCamera");
-                serverCamera.SetActive(false);
+                if (serverCamera != null){ serverCamera.SetActive(false); }
                 isServerCameraActive = false;
             }
+
+            //Debug.Log("Trying to Map camera transform to avatar");
             GameObject hololensComponents = GameObject.FindGameObjectWithTag("MainCamera");
             cameraTransform = hololensComponents.transform;
             //cameraTransform = GetComponent<DeviceSceneSwitcher>().hololensObjects[0].transform;
