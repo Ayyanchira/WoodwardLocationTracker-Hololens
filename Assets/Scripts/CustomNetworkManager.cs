@@ -5,16 +5,16 @@ using UnityEngine.Networking;
 
 public class CustomNetworkManager : NetworkManager {
 
-    public GameObject playerPrefab;
-    public void connectAsClient()
-    {
-        NetworkManager.singleton.StartClient();
-    }
+    //public GameObject playerPrefab;
+    //public void connectAsClient()
+    //{
+    //    NetworkManager.singleton.StartClient();
+    //}
 
-    public override void OnClientConnect(NetworkConnection conn)
-    {
-        short playerCount = (System.Int16)conn.playerControllers.Count;
-        ClientScene.AddPlayer(conn, playerCount);
-        base.OnClientConnect(conn);
-    }
+    //public override void OnClientConnect(NetworkConnection conn)
+    //{
+    //    short playerCount = (System.Int16)conn.playerControllers.Count;
+    //    ClientScene.AddPlayer(conn, playerCount);
+    //    base.OnClientConnect(conn);
+    //}
 }
