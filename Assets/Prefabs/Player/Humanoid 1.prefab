@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4811995293798588}
   - component: {fileID: 114572438539504554}
   - component: {fileID: 114333735187346272}
+  - component: {fileID: 114952040556194480}
   m_Layer: 0
   m_Name: Humanoid 1
   m_TagString: Untagged
@@ -242,6 +243,27 @@ MonoBehaviour:
     i15: 95
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114952040556194480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896967653557470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!136 &136483186415098966
 CapsuleCollider:
   m_ObjectHideFlags: 1

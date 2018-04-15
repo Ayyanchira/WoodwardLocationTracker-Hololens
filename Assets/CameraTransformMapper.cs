@@ -27,6 +27,7 @@ public class CameraTransformMapper : NetworkBehaviour {
             cameraTransform = hololensComponents.transform;
             //cameraTransform = GetComponent<DeviceSceneSwitcher>().hololensObjects[0].transform;
             this.transform.position = cameraTransform.position;
+            this.transform.rotation = cameraTransform.rotation;
         }
         
 	}
